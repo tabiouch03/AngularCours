@@ -1,0 +1,6 @@
+<p class="text-center">reading-message works!</p>
+<div>
+<div *ngFor="let message of messages; index as i">
+  <app-message-ui *ngIf='i<count' [message]= 'message'></app-message-ui>
+</div>
+</div>
